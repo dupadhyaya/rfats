@@ -76,7 +76,7 @@ library(ROCR)
 str(Train)
 pred = prediction(Train$predicted.risk, Train$Class)
 pred
-as.numeric(performance(pred, "auc")@y.values)
+as.numeric(performance(pred, "auc")@y.values)  #67.9% accuracy
 
 #Plot ROC Curve
 pred = prediction(Train$predicted.risk, Train$Class)
@@ -86,5 +86,10 @@ plot(ROCperf)
 #do it for Test Data also
 Test$predicted.risk = predict(lgfit3, newdata = Test, type='response')
 pred_Test = prediction(Test$predicted.risk, Test$Class)
+(performance(pred_Test, "auc")@y.values)  #58% accuracy
 ROCperf_Test = performance(pred_Test, "tpr","fpr")
 plot(ROCperf_Test)
+
+
+#ROC
+#https://stats.stackexchange.com/questions/132777/what-does-auc-stand-for-and-what-is-it
