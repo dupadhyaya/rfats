@@ -36,6 +36,8 @@ tcplot(events[, "obs"], which = 2)
 obs <- events[,"obs"]
 ModelFit <- fitgpd(obs, thresh = 5, "pwmu")
 ModelFit
+
+
 # Sampling-Random
 RandomSample <- Sampledata[sample(1:nrow(Sampledata), 10, replace=FALSE),]
 RandomSample
@@ -77,6 +79,7 @@ acf(Sampledata$Volume)
 pacf(Sampledata$Volume)
 # Finding cross correlation
 ccf(Sampledata$Volume,Sampledata$High, main = "ccf plot")
+
 #Hypothesis Testing
 #1-Lower Tail Test of Population Mean with Known Variance
 xbar= 9.9          

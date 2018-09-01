@@ -55,3 +55,4 @@ inspect(head(subset(top.lift4, lhs %pin% "wheat"), 3))
 
 
 as(rules2, "data.frame")
+
