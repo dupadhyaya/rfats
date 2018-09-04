@@ -1,0 +1,16 @@
+Time Series
+
+- Sequence of data usually collected at regular intervals
+- daily/ monthly/ yearly
+
+Financial Domain
+- unemployment, GDP, daily exchange, share prices
+
+Analyse TS data and plan future stratehy
+
+-------------
+TS is very unpredictable in nature. Need to decompose the TS into components
+Trend - long term movements
+Seasonal - cyclical fluctuations related periodical fluctuations : period - month/qtr of year; can be identified by plotting
+Cycles  - associated with longer period business cycles
+Residues/ Irregular : systematic patterns / random noise 

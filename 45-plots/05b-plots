@@ -1,0 +1,12 @@
+
+#Plots for TS and Financial Data
+
+https://msperlin.github.io/pafdR/Figures.html#using-graphic-windows
+https://lamfo-unb.github.io/2017/07/22/intro-stock-analysis-1/
+
+
+If Yahoo Finance API is not working, it’s possible to download the prices straight from the website. 
+pbr <- read.csv("PBR.csv")
+pbr[,1] <- as.Date(pbr[,1])
+pbr <- xts(pbr)
+pbr <- pbr[,-1]

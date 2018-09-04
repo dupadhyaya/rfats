@@ -1,0 +1,3 @@
+#Package GetHFData
+
+Package GetHFData (Perlin and Ramos 2016) is designed to facilitate the importation and analysis of high frequency trading data from Bovespa, the Brazilian Financial exchange. It allows access to trade data in the equity and derivative market. At the time of this book, GetHFData is the only available package in CRAN that allows direct and free access to high frequency data. The functions from the package allow the user to get information from the ftp site and download raw or aggregate dataset

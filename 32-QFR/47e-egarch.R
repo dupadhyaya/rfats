@@ -1,0 +1,1 @@
+#GARCH Model
