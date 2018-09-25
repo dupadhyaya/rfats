@@ -2,7 +2,10 @@
 library(quantmod)
 
 getSymbols("HDFCBANK.BO", src="yahoo")
+HDFCBANK.BO
+tail(HDFCBANK.BO)
 getSymbols("IDFC.NS", src="yahoo")
+
 #.BO for BSE and .NS for NSE
 getSymbols("SBIN.BO", src="yahoo")
 head(SBIN.BO[complete.cases(SBIN.BO)])

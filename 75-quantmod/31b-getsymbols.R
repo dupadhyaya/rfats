@@ -13,6 +13,6 @@ getSymbols(Symbols = 'HDFC.NS', auto.assign = TRUE)
 head(HDFC.NS)
 getSymbols(Symbols = 'PNB.NS', auto.assign = FALSE)
 #no variable created
-head(PNB.NS)
+head(PNB.NS)  # will not run
 
 

@@ -8,6 +8,7 @@ library(quantmod)
 #Dow Jones Industrial Average(DJIA)
 getSymbols('^DJI',src="yahoo")
 dji = DJI[,"DJI.Close"]
+head(dji)
 dji = dji[index(dji) >= "2010-01-01" & index(dji) <= "2015-12-31"]
 head(dji)
 ret_dji = Delt(dji, k=1)

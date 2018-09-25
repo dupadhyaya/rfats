@@ -12,9 +12,6 @@
 #Op,Hi,Lo,Cl,Vo,Ad - do pretty much what they say - extract the columns Open, High, Low, Close, Volume, and Adjusted (Yahoo)
 #is.OHLC, has.OHLC, has.Op,has.Cl,has.Hi,has.Lo,has.Ad, and has.Vo - fairly obvious seriesHi and seriesLo
 
-
-
-
 library(quantmod)
 getSymbols("GS") #Goldman OHLC from yahoo 
 #[1] "GS" 
