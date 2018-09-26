@@ -14,6 +14,8 @@ length(sales)
 (yearlysales1 = ts(sales, start=c(1980,3), frequency=1)) 
 # 3rd yr from 1980
 
+methods(class=ts)
+
 #Quarterly -----
 12/4  # freq=4
 (qtrsales = ts(sales, start=c(1980), frequency=4))
