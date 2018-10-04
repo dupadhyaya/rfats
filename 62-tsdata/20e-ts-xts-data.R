@@ -1,7 +1,7 @@
 #xts time series
 
 library(xts)
-#Time Series
+#Time Series -built in
 class(AirPassengers)
 head(AirPassengers,10)
 AirPassengers
@@ -10,7 +10,10 @@ window(AirPassengers, start=c(1950,3), end=c(1954,5))
 
 #XTS series-----
 airp.xts = as.xts(AirPassengers)
+head(airp.xts)  # 1 column for full data, index as date-time
+tail(airp.xts)
 class(airp.xts)
+
 #subset - looks at index values
 airp.xts["1954-03/1954-09"] # range month-year
 airp.xts["1954"]  #only 1954 year

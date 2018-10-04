@@ -1,4 +1,5 @@
 # MA in TTR
+#https://rdrr.io/rforge/TTR/man/MovingAverages.html
 
 # SMA(x, n = 10, ...)
 # 
