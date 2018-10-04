@@ -1,0 +1,4 @@
+#TTR
+Technical Trading Rules
+
+Functions and data to construct technical trading rules with R.

@@ -1,5 +1,6 @@
 #xts time series
 
+library(xts)
 #Time Series
 class(AirPassengers)
 head(AirPassengers,10)

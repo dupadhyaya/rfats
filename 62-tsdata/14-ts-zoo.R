@@ -6,6 +6,6 @@ library(zoo)
 
 #all methods available with zoo
 methods(class=zoo)
-
+?zoo
 
 methods(class="yearmon")
