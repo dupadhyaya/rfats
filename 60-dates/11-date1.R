@@ -11,7 +11,7 @@ class(cdate1) ; class(cdate2)
 #Default Format of Date in R
 ?as.Date()
 
-#See/ Convert Date format
+#Convert to Date format
 as.Date('2018-09-01')
 #Default Format : Year-Month-Date : %Y-%m-%d
 (date3= as.Date('2018-09-01',format='%Y-%m-%d'))
@@ -46,5 +46,8 @@ class(cdate2)
 
 date1
 as.numeric(date1)
+date1- as.Date('1970-01-01')
 date2
 as.numeric(date2)
+date2 - as.Date('1970-01-01') 
+#see the difference wrt reference date

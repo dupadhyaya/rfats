@@ -21,7 +21,7 @@ class(cdate4)  #character
 format(date4, '%A')
 
 #character to date and then display Day of the week
-format(as.Date('18-04-1994', '%d-%m-%Y'), '%A')
+format(as.Date('01-12-2018', '%d-%m-%Y'), '%A')
 
 
 format(date4, format=('%d-%m-%Y')) # print in different format

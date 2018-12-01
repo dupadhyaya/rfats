@@ -9,7 +9,7 @@ sample_matrix
 
 zoo.data <- zoo(rnorm(31)+10,as.Date(13514:13744,origin="1970-01-01"))
 head(zoo.data)
-
+zoo.data
 # code example 1
 to.quarterly(sample_matrix)
 
@@ -26,6 +26,8 @@ period.apply(zoo.data, endpoints(zoo.data, on = "quarters"), sd)
 # self defined function of summing x + x for the period
 period.apply(zoo.data, endpoints(zoo.data, on = "quarters"), function(x) sum(x + x) )
 
-
+tail(sample_matrix)
 # code example 5
 period.apply(sample_matrix, endpoints(sample_matrix, on = "quarters"), colMeans)
+#quarterly means: sum for quarter and then means
+

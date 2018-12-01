@@ -9,3 +9,4 @@ time = c("00:00:01","01:02:00","09:30:01","14:15:25")
 (w = strptime(x = time, format = "%H:%M:%S")) #"POSIXlt" "POSIXt" class
 # this is the format which can store date and time
 #but cannot do any arithmetic
+#like adding days

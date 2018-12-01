@@ -14,8 +14,9 @@ Sys.Date()
 Sys.Date() + 1:15
 
 ##increment/ decrement dates 
-(startdt = as.Date("2018-11-30", format="%Y-%m-%d"))
-(next20days = startdt + 1:20) # start : 20 days course
+(startdt = as.Date("2018-12-01", format="%Y-%m-%d"))
+(next20days = startdt + 0:19) # start : 20 days course incl start date
 startdt - 1
-(prev20days = startdt - c(1:20)) # before : 20 days course
+#20 days course to end on 01-Dec-18
+(prev20days = startdt - c(0:19)) # before : 20 days course
 rev(prev20days)

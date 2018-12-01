@@ -1,7 +1,7 @@
 # date Arithmetic and subsets
 
 #start course on 25 Oct 2018 for 30 days
-(course1 = as.Date("2018-10-25") + 0:29)
+(course1 = as.Date("2018-12-01") + 0:29)
 
 #Difference in dates
 course1
@@ -12,19 +12,19 @@ range(course1) # start to end
 mean(course1)  # center of the course period
 median(course1) # middle date
 
-sd(course1) #no meaning
+#sd(course1) #no meaning
 
 #subset / select dates
 course1
 #1st and 5th dates
-course[c(1,5)] # 1st & 5th date 
+course1[c(1,5)] # 1st & 5th date 
 #1st and 5th dates
-course[1] ; course[5]
+course1[1] ; course1[5]
 
 #duration from 8th date to first date
-(duration1 = course[8] - course[1])
-#total duration
-(duration2 = max(course) - min(course))
+(duration1 = course1[8] - course1[1])
+#total duration: it is between days 
+(duration2 = max(course1) - min(course1))
 
 #duration since independence
 (independencedays = Sys.Date() - as.Date('15-08-1947', '%d-%m-%Y'))
